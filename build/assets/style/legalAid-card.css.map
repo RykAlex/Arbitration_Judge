@@ -1,0 +1,1 @@
+{"version":3,"sources":["legalAid-card.scss","legalAid-card.css"],"names":[],"mappings":"AAAA;EACE,8CAAA;ACCF","file":"legalAid-card.css","sourcesContent":[".legalAidCard {\n  background: url(\"../assets/static/img/bg.png\");\n}\n",".legalAidCard {\n  background: url(\"../assets/static/img/bg.png\");\n}"]}

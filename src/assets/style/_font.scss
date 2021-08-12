@@ -65,18 +65,8 @@
   font-weight: 600;
   font-display: swap;
 }
-@font-face {
-  font-family: Gill Sans;
-  src: url(../assets/static/font/Gill_Sans-Regular.woff2);
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: Iceberg;
-  src: url(../assets/static/font/Iceberg-Regular.woff2);
-  font-weight: 400;
-  font-display: swap;
-}
+
+@import "variables-breakpoints";
 
 body {
   font-size: 15px;
@@ -85,94 +75,73 @@ body {
 }
 
 h1 {
-  font-family: Montserrat, sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 136%;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 103%;
 }
 
 h2 {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 136%;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 135%;
 }
 
 h3 {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 136%;
-}
-
-h4 {
-  font-size: 14px;
+  font-family: Montserrat;
+  font-size: 32px;
   font-weight: 500;
-  text-transform: uppercase;
-  line-height: 136%;
-  letter-spacing: 0.16em;
+  line-height: 122%;
+}
+.content {
+  font-family: Open sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 156%;
 }
 
 .subtitle {
-  font-size: 20px;
-  line-height: 136%;
-  font-weight: 400;
+  font-family: Open sans;
+  font-size: 16px;
+  line-height: 156%;
+  font-weight: 600;
+  color: $green;
 }
 
 .caption {
-  font-size: 13px;
-  line-height: 136%;
-  font-weight: 500;
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 104%;
+  font-weight: 600;
 }
 
 a {
   display: flex;
-
   text-decoration: none;
 }
 
 @media screen and (max-width: $tablet) {
   body {
-    font-size: 13px;
+    font-size: 15px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 23px;
+    font-size: 24px;
   }
   h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
-  h4 {
-    font-size: 13px;
-  }
+
   .subtitle {
     font-size: 16px;
   }
   .caption {
-    font-size: 11px;
+    font-size: 24px;
   }
 }
 
 @media screen and (max-width: $mobile) {
-  body {
-    font-size: 12px;
-  }
-  h1 {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 22px;
-  }
-  h3 {
-    font-size: 15px;
-  }
-  h4 {
-    font-size: 12px;
-  }
-  .subtitle {
-    font-size: 16px;
-  }
-  .caption {
-    font-size: 10px;
-  }
 }

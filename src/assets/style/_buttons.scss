@@ -1,0 +1,44 @@
+.btn-fomalize {
+  color: $green-light;
+  background: $white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 24px;
+  border: 2px solid $green;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.5s linear;
+
+  &:hover {
+    cursor: pointer;
+    background: $green;
+    color: $white;
+  }
+}
+.btn-order {
+  background: linear-gradient(180deg, #b5da46 0%, #8cb31a 100%);
+  box-shadow: 0px 2px 5px rgba(100, 141, 169, 0.5),
+    0px 1px 1px rgba(114, 153, 0, 0.6);
+  border-radius: 5px;
+  color: $white;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: linear 0.2s background;
+  &:hover {
+    cursor: pointer;
+    background: $white;
+    color: $green-light;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+}

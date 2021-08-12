@@ -1,0 +1,78 @@
+.container-header {
+  width: 100%;
+  max-width: 1260px;
+  margin: auto;
+  position: relative;
+  margin-top: 20px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-phone {
+  display: flex;
+  align-items: baseline;
+}
+.phone-icon {
+  margin-right: 12px;
+  img {
+    width: 10px;
+    height: 17px;
+  }
+}
+.content {
+  color: $dark;
+  font-size: 22px;
+  line-height: 27px;
+}
+.header-nav {
+  display: flex;
+}
+.nav-link {
+  margin-right: 45px;
+  color: $dark;
+  font-family: Montserrat;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  &:hover,
+  &.active {
+    color: $dark;
+    &:after {
+      width: 100%;
+    }
+  }
+  &:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: $green;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+    transition: width 0.2s linear;
+  }
+}
+.nav-link .active {
+  width: 100%;
+  border: 2px;
+  background-color: $green;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+}
+
+@import "variables-breakpoints";
+@media screen and (max-width: $tablet) {
+  .container-header {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+}
