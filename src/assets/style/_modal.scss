@@ -1,43 +1,76 @@
-.container-header {
+/* Modal */
+.modal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 1260px;
-  margin: auto;
-  position: relative;
-  margin-top: 20px;
+  height: 100%;
+  position: fixed;
+  opacity: 1;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  z-index: 2000;
 }
-.header-content {
+.modal-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  background-color: $white;
+  padding: 15px;
+  border: 2px solid $dark;
+  border-radius: 5px;
+  position: relative;
+}
+.header-content-m {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-phone {
+.header-phone-m {
   display: flex;
+  justify-content: center;
   align-items: baseline;
+  margin-bottom: 30px;
 }
-.phone-icon {
+.phone-icon-m {
   margin-right: 12px;
   img {
     width: 10px;
     height: 17px;
   }
 }
-.content {
+.content-m {
   color: $dark;
   font-size: 22px;
   line-height: 27px;
 }
-.header-nav {
+.header-nav-m {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.nav-link {
-  margin-right: 45px;
+a.nav-link-m {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $dark;
+  font-family: Montserrat;
+}
+.nav-link-m {
+  margin-right: 0;
   color: $dark;
   font-family: Montserrat;
 
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  position: relative;
+
   &:hover,
   &.active {
     color: $dark;
@@ -57,7 +90,7 @@
     transition: width 0.2s linear;
   }
 }
-.nav-link .active {
+.nav-link-m .active {
   width: 100%;
   border: 2px;
   background-color: $green;
@@ -66,26 +99,20 @@
   left: 0;
   z-index: 1;
 }
-.menu {
-  display: none;
+.close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  z-index: 2000;
 }
+.modal.show {
+  display: flex;
+}
+
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
   .container-header {
     padding: 0 16px;
-  }
-  .menu {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2000;
-
-    margin-top: -17px;
-  }
-  .container-header {
-    margin-top: 32px;
-    margin-left: 20px;
   }
 }
 

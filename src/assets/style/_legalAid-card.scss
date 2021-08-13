@@ -2,17 +2,16 @@
   margin-top: 15px;
   position: relative;
 }
-.container-card {
+.container-item {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 1116px;
-  margin: 0 auto;
 }
 .card-left {
   display: flex;
   flex-direction: column;
-  width: 31%;
+  width: 420px;
   position: absolute;
   top: 72px;
   left: 165px;
@@ -33,7 +32,7 @@
   & .subtitle {
     position: absolute;
     top: 24px;
-    right: 15px;
+    right: 5px;
     font-family: Montserrat;
     font-weight: 600;
     font-size: 24px;
@@ -49,6 +48,7 @@
     font-size: 32px;
     line-height: 33px;
     color: $white;
+    white-space: nowrap;
   }
 }
 .card-left .pic {
@@ -78,14 +78,47 @@
   bottom: 0;
   right: 0;
 }
-.card-right img {
-  overflow: hidden;
-  object-fit: contain;
-}
+
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
   .container {
     padding: 0;
+  }
+  .header-phone,
+  .header-nav,
+  button {
+    display: none;
+  }
+  .card-item {
+    flex-direction: column;
+    flex-shrink: 0 0 1;
+  }
+  .pic,
+  .card-left-text {
+    display: none;
+  }
+  .card-left {
+    width: 320px;
+    left: 16px;
+  }
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & .title {
+      font-size: 48px;
+    }
+    & .subtitle {
+      font-size: 16px;
+    }
+    & .text {
+      font-size: 22px;
+    }
+  }
+  .card-right {
+    width: 100%;
   }
 }
 
