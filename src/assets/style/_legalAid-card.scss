@@ -1,125 +1,63 @@
 .container {
-  margin-top: 15px;
-  position: relative;
-}
-.container-item {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1116px;
-}
-.card-left {
-  display: flex;
-  flex-direction: column;
-  width: 420px;
-  position: absolute;
-  top: 72px;
-  left: 165px;
-}
-.card-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  height: 768px;
+  margin: 0;
 
-  & .title {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 88px;
-    color: $green-light;
-  }
-  & .subtitle {
-    position: absolute;
-    top: 24px;
-    right: 5px;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 25px;
-    color: $white;
-  }
-  & .text {
-    position: absolute;
-    top: 86px;
-    left: 7px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 33px;
-    color: $white;
-    white-space: nowrap;
-  }
+  position: relative;
+  background: url("/src/assets/static/img/bg.png") no-repeat;
 }
-.card-left .pic {
-  position: absolute;
-  top: 100px;
-  left: 7px;
-  margin-top: 72px;
+.card {
+  display: flex;
+
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding: 75px 0 0 165px;
 }
-.card-left-text {
-  position: absolute;
-  bottom: -430px;
-  left: 7px;
+.card-item {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-family: Montserrat;
+  color: $green-light;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 88px;
+  margin-right: 20px;
+}
+.subtitle {
+  font-family: Montserrat;
+  color: $white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 25px;
+}
+.text {
+  font-family: Montserrat;
+  color: $white;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 33px;
+  margin-bottom: 56px;
+}
+.pic {
+  margin-bottom: 50px;
+}
+.text_1 {
   font-family: Open Sans;
+  color: $white;
   font-weight: 600;
   font-size: 17px;
   line-height: 25px;
-  color: $white;
-}
-.btn-order {
-  position: absolute;
-  bottom: -510px;
-  left: 7px;
 }
 .card-right {
-  width: 55%;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -17px;
+  right: 120px;
+  height: 100%;
 }
-
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
-  .container {
-    padding: 0;
-  }
-  .header-phone,
-  .header-nav,
-  button {
-    display: none;
-  }
-  .card-item {
-    flex-direction: column;
-    flex-shrink: 0 0 1;
-  }
-  .pic,
-  .card-left-text {
-    display: none;
-  }
-  .card-left {
-    width: 320px;
-    left: 16px;
-  }
-  .card-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
-    & .title {
-      font-size: 48px;
-    }
-    & .subtitle {
-      font-size: 16px;
-    }
-    & .text {
-      font-size: 22px;
-    }
-  }
-  .card-right {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: $mobile) {

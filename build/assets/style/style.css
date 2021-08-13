@@ -23,7 +23,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   src: url(../assets/static/font/Montserrat-Regular.woff2);
   font-weight: 400;
   font-display: swap;
@@ -1421,9 +1421,10 @@ ol li:before {
 .container-header {
   width: 100%;
   max-width: 1260px;
-  margin: auto;
+  margin-left: 70px;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .header-content {
@@ -1530,165 +1531,80 @@ ol li:before {
   }
 }
 .container {
-  margin-top: 15px;
+  height: 768px;
+  margin: 0;
   position: relative;
+  background: url("/assets/static/img/bg.png") no-repeat;
 }
 
-.container-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 1116px;
-}
-
-.card-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 420px;
-  position: absolute;
-  top: 72px;
-  left: 165px;
-}
-
-.card-title {
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 75px 0 0 165px;
+}
+
+.card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
-.card-title .title {
+
+.title {
   font-family: Montserrat;
-  font-weight: 700;
+  color: #8cb31a;
+  font-weight: bold;
   font-size: 72px;
   line-height: 88px;
-  color: #8cb31a;
+  margin-right: 20px;
 }
-.card-title .subtitle {
-  position: absolute;
-  top: 24px;
-  right: 5px;
+
+.subtitle {
   font-family: Montserrat;
+  color: #ffffff;
   font-weight: 600;
   font-size: 24px;
   line-height: 25px;
-  color: #ffffff;
 }
-.card-title .text {
-  position: absolute;
-  top: 86px;
-  left: 7px;
+
+.text {
   font-family: Montserrat;
+  color: #ffffff;
   font-weight: 500;
   font-size: 32px;
   line-height: 33px;
-  color: #ffffff;
-  white-space: nowrap;
+  margin-bottom: 56px;
 }
 
-.card-left .pic {
-  position: absolute;
-  top: 100px;
-  left: 7px;
-  margin-top: 72px;
+.pic {
+  margin-bottom: 50px;
 }
 
-.card-left-text {
-  position: absolute;
-  bottom: -430px;
-  left: 7px;
+.text_1 {
   font-family: Open Sans;
+  color: #ffffff;
   font-weight: 600;
   font-size: 17px;
   line-height: 25px;
-  color: #ffffff;
-}
-
-.btn-order {
-  position: absolute;
-  bottom: -510px;
-  left: 7px;
 }
 
 .card-right {
-  width: 55%;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -17px;
+  right: 120px;
+  height: 100%;
 }
 
-@media screen and (max-width: 1199px) {
-  .container {
-    padding: 0;
-  }
-
-  .header-phone,
-.header-nav,
-button {
-    display: none;
-  }
-
-  .card-item {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-negative: 0 0 1;
-        flex-shrink: 0 0 1;
-  }
-
-  .pic,
-.card-left-text {
-    display: none;
-  }
-
-  .card-left {
-    width: 320px;
-    left: 16px;
-  }
-
-  .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .card-title .title {
-    font-size: 48px;
-  }
-  .card-title .subtitle {
-    font-size: 16px;
-  }
-  .card-title .text {
-    font-size: 22px;
-  }
-
-  .card-right {
-    width: 100%;
-  }
-}
 /* Modal */
 .modal {
   display: none;
