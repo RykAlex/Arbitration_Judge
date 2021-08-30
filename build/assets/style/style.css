@@ -1402,7 +1402,7 @@ ol li:before {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
-  padding: 15px 30px;
+  padding: 19px 35px;
   outline: none;
   border: none;
   text-align: center;
@@ -1418,11 +1418,8 @@ ol li:before {
   color: #8cb31a;
 }
 
-.container-header {
-  width: 100%;
-  max-width: 1260px;
-  margin-left: 70px;
-  position: relative;
+.container .header-content {
+  width: 1260px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -1530,28 +1527,38 @@ ol li:before {
     margin-left: 20px;
   }
 }
-.container {
+.card {
   height: 768px;
-  margin: 0;
-  position: relative;
   background: url("/assets/static/img/bg.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
 }
 
-.card {
+.container .card-content {
+  max-width: 1116px;
+  width: 100%;
+  margin: 0 0 0 100px;
+  padding-top: 72px;
+}
+
+.card-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 39%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 75px 0 0 165px;
 }
 
-.card-item {
+.left-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1560,49 +1567,60 @@ ol li:before {
           align-items: center;
 }
 
-.title {
+.card-title {
+  margin-right: 20px;
   font-family: Montserrat;
-  color: #8cb31a;
   font-weight: bold;
   font-size: 72px;
   line-height: 88px;
-  margin-right: 20px;
+  color: #b5da47;
 }
 
-.subtitle {
+.card-subtitle {
+  margin-top: 10px;
   font-family: Montserrat;
   color: #ffffff;
   font-weight: 600;
   font-size: 24px;
   line-height: 25px;
+  letter-spacing: 2px;
 }
 
-.text {
+.for-who {
   font-family: Montserrat;
   color: #ffffff;
   font-weight: 500;
   font-size: 32px;
   line-height: 33px;
-  margin-bottom: 56px;
 }
 
-.pic {
-  margin-bottom: 50px;
+.card-img {
+  margin-top: 56px;
+  overflow: hidden;
+}
+.card-img img {
+  display: block;
 }
 
-.text_1 {
+.text-under-card {
+  margin-top: 48px;
+  margin-bottom: 40px;
   font-family: Open Sans;
   color: #ffffff;
   font-weight: 600;
   font-size: 17px;
   line-height: 25px;
+  letter-spacing: 0.7px;
 }
 
-.card-right {
+button.btn-order {
+  width: 36%;
+}
+
+.right img {
   position: absolute;
-  bottom: -17px;
-  right: 120px;
-  height: 100%;
+  bottom: -56px;
+  right: 150px;
 }
 
 /* Modal */

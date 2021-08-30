@@ -1,60 +1,77 @@
-.container {
-  height: 768px;
-  margin: 0;
-
-  position: relative;
-  background: url("/src/assets/static/img/bg.png") no-repeat;
-}
 .card {
-  display: flex;
+  height: 768px;
 
-  justify-content: space-between;
-  flex-direction: column;
-
-  padding: 75px 0 0 165px;
+  background: url("/src/assets/static/img/bg.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
 }
-.card-item {
+.container .card-content {
+  max-width: 1116px;
+  width: 100%;
+  margin: 0 0 0 100px;
+  padding-top: 72px;
+}
+.card-content {
+  display: flex;
+}
+.left {
+  display: flex;
+  width: 39%;
+  flex-direction: column;
+}
+.left-title {
   display: flex;
   align-items: center;
 }
-.title {
+.card-title {
+  margin-right: 20px;
   font-family: Montserrat;
-  color: $green-light;
   font-weight: bold;
   font-size: 72px;
   line-height: 88px;
-  margin-right: 20px;
+  color: $green-text;
 }
-.subtitle {
+.card-subtitle {
+  margin-top: 10px;
   font-family: Montserrat;
   color: $white;
   font-weight: 600;
   font-size: 24px;
   line-height: 25px;
+  letter-spacing: 2px;
 }
-.text {
+.for-who {
   font-family: Montserrat;
   color: $white;
   font-weight: 500;
   font-size: 32px;
   line-height: 33px;
-  margin-bottom: 56px;
 }
-.pic {
-  margin-bottom: 50px;
+.card-img {
+  margin-top: 56px;
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
 }
-.text_1 {
+.text-under-card {
+  margin-top: 48px;
+  margin-bottom: 40px;
   font-family: Open Sans;
   color: $white;
   font-weight: 600;
   font-size: 17px;
   line-height: 25px;
+  letter-spacing: 0.7px;
 }
-.card-right {
+button.btn-order {
+  width: 36%;
+}
+.right img {
   position: absolute;
-  bottom: -17px;
-  right: 120px;
-  height: 100%;
+  bottom: -56px;
+  right: 150px;
 }
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
