@@ -1,0 +1,39 @@
+.annual-maintenance {
+  background-color: #9dc622;
+  margin-bottom: 88px;
+}
+
+.container .annual-maintenance-wrapper {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 0 0 207px;
+  padding-top: 60px;
+  padding-bottom: 47px;
+}
+
+.annual-maintenance-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.annual-maintenance-text {
+  font-family: Montserrat;
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.annual-maintenance-wrapper .btn-price {
+  width: 303px;
+  height: 56px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=annual-maintenance copy.css.map */

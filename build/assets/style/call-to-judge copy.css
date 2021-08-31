@@ -1,0 +1,84 @@
+.call-to-judge {
+  margin-top: 88px;
+  margin-bottom: 72px;
+}
+
+.call-to-judge-wrapper {
+  max-width: 923px;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.call-left {
+  width: 49%;
+}
+
+.call-subtitle {
+  font-family: Montserrat;
+  color: #202020;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.call-title {
+  font-family: Montserrat;
+  color: #9dc622;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 50px;
+  margin-bottom: 32px;
+}
+
+.call-text {
+  font-family: Open Sans;
+  color: #202020;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.no-limit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 48px;
+}
+
+.no-limit .icon-times {
+  margin-right: 35px;
+  margin-left: 11px;
+  width: 38px;
+  height: 60px;
+}
+
+.no-limit .icon-visit {
+  margin-right: 35px;
+  width: 60px;
+  height: 60px;
+}
+
+.no-limit .icon-field {
+  margin-right: 35px;
+  width: 54px;
+  height: 60px;
+  margin-left: 3px;
+}
+
+.no-limit-text {
+  font-family: Open Sans;
+  color: #202020;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+}
+/*# sourceMappingURL=call-to-judge copy.css.map */
