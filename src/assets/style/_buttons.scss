@@ -1,6 +1,6 @@
 .btn-fomalize {
   color: $green-light;
-  background: #e5e5e5;
+  background: $white;
   text-align: center;
   vertical-align: middle;
   padding: 10px 24px;
@@ -20,7 +20,7 @@
   box-shadow: 0px 2px 5px rgba(100, 141, 169, 0.5),
     0px 1px 1px rgba(114, 153, 0, 0.6);
   border-radius: 5px;
-  color: #e5e5e5;
+  color: $white;
   font-family: Montserrat;
   font-weight: bold;
   font-size: 15px;
@@ -41,7 +41,7 @@
 }
 .btn-price {
   color: $green-light;
-  background: #e5e5e5;
+  background: $white;
   text-align: center;
   vertical-align: middle;
   padding: 10px 24px;
