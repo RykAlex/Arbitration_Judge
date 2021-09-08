@@ -17,6 +17,19 @@
   &:nth-child(5n + 3) {
     border-bottom: 1px solid #dedede;
   }
+  //border-right: 1px solid #dedede;
+  &:nth-child(5n + 4) {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 495px;
+      bottom: -311px;
+      left: 878px;
+      background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
+    }
+  }
 }
 .div2 {
   border-top: 1px solid #dedede;
@@ -36,11 +49,52 @@
   }
 }
 .div3 {
-  border-top: 1px solid #dedede;
+  //border-top: 3px solid #dedede;
+  border-right: 3px solid transparent;
+  border-image: linear-gradient(
+    270deg,
+    #9cc622 0%,
+    rgba(156, 198, 34, 0.3) 100%
+  );
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 108%;
+    height: 1px;
+    bottom: -1px;
+    left: -30px;
+    background: linear-gradient(
+      270deg,
+      #9cc622 0%,
+      rgba(156, 198, 34, 0.3) 120%
+    );
+  }
 
-  border-right: 1px solid #dedede;
   &:nth-child(5n) {
-    border-bottom: 1px solid #dedede;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 108%;
+      height: 3px;
+      bottom: -1.5px;
+      left: -30px;
+      background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
+    }
+  }
+
+  &:nth-child(5n + 4) {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 108%;
+      height: 3px;
+      bottom: 284.5px;
+      left: -30px;
+      background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
+    }
   }
 }
 

@@ -1802,6 +1802,20 @@ button.btn-order {
 .div1:nth-child(5n+3) {
   border-bottom: 1px solid #dedede;
 }
+.div1:nth-child(5n+4) {
+  position: relative;
+}
+.div1:nth-child(5n+4)::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 495px;
+  bottom: -311px;
+  left: 878px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #9cc622), to(#9cc622));
+  background: -o-linear-gradient(left, #9cc622 20%, #9cc622 100%);
+  background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
+}
 
 .div2 {
   border-top: 1px solid #dedede;
@@ -1822,11 +1836,50 @@ button.btn-order {
 }
 
 .div3 {
-  border-top: 1px solid #dedede;
-  border-right: 1px solid #dedede;
+  border-right: 3px solid transparent;
+  -o-border-image: -o-linear-gradient(right, #9cc622 0%, rgba(156, 198, 34, 0.3) 100%);
+     border-image: -webkit-gradient(linear, right top, left top, from(#9cc622), to(rgba(156, 198, 34, 0.3)));
+     border-image: linear-gradient(270deg, #9cc622 0%, rgba(156, 198, 34, 0.3) 100%);
+  position: relative;
+}
+.div3::before {
+  content: "";
+  position: absolute;
+  width: 108%;
+  height: 1px;
+  bottom: -1px;
+  left: -30px;
+  background: -webkit-gradient(linear, right top, left top, from(#9cc622), color-stop(120%, rgba(156, 198, 34, 0.3)));
+  background: -o-linear-gradient(right, #9cc622 0%, rgba(156, 198, 34, 0.3) 120%);
+  background: linear-gradient(270deg, #9cc622 0%, rgba(156, 198, 34, 0.3) 120%);
 }
 .div3:nth-child(5n) {
-  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+.div3:nth-child(5n)::before {
+  content: "";
+  position: absolute;
+  width: 108%;
+  height: 3px;
+  bottom: -1.5px;
+  left: -30px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #9cc622), to(#9cc622));
+  background: -o-linear-gradient(left, #9cc622 20%, #9cc622 100%);
+  background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
+}
+.div3:nth-child(5n+4) {
+  position: relative;
+}
+.div3:nth-child(5n+4)::after {
+  content: "";
+  position: absolute;
+  width: 108%;
+  height: 3px;
+  bottom: 284.5px;
+  left: -30px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #9cc622), to(#9cc622));
+  background: -o-linear-gradient(left, #9cc622 20%, #9cc622 100%);
+  background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
 }
 
 .grid-item.title {
