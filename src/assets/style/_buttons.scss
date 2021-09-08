@@ -40,14 +40,17 @@
   }
 }
 .btn-price {
+  background: linear-gradient(180deg, #ffffff 0%, #e8f7bb 100%);
+  box-shadow: 0px 2px 5px rgba(140, 140, 140, 0.4),
+    0px 1px 1px rgba(114, 153, 0, 0.6);
+  border-radius: 5px;
   color: $green-light;
-  background: $white;
   text-align: center;
   vertical-align: middle;
   padding: 10px 24px;
-  border: 2px solid $green;
+  border: none;
   text-transform: uppercase;
-  border-radius: 4px;
+
   transition: all 0.5s linear;
 
   &:hover {
