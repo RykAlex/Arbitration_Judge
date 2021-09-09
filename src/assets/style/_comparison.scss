@@ -12,10 +12,39 @@
   justify-content: center;
 }
 .div1 {
-  border-top: 1px solid #dedede;
   border-left: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    bottom: -1px;
+    right: -30px;
+    background: #dedede;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    top: -1px;
+    right: -30px;
+    background: #dedede;
+  }
+
   &:nth-child(5n + 3) {
     border-bottom: 1px solid #dedede;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      bottom: -1px;
+      right: -30px;
+      background: #dedede;
+    }
   }
   //border-right: 1px solid #dedede;
   &:nth-child(5n + 4) {
@@ -24,15 +53,15 @@
       content: "";
       position: absolute;
       width: 3px;
-      height: 495px;
-      bottom: -311px;
+      height: 494px;
+      bottom: -310px;
       left: 878px;
       background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
     }
   }
 }
 .div2 {
-  border-top: 1px solid #dedede;
+  border-top: 1px solid transparent;
   position: relative;
   &::after {
     content: "";
@@ -45,7 +74,7 @@
     z-index: 1;
   }
   &:nth-child(5n + 4) {
-    border-bottom: 1px solid #dedede;
+    border-bottom: 1px solid transparent;
   }
 }
 .div3 {
@@ -64,6 +93,7 @@
     height: 1px;
     bottom: -1px;
     left: -30px;
+    z-index: 10;
     background: linear-gradient(
       270deg,
       #9cc622 0%,
@@ -78,9 +108,13 @@
       position: absolute;
       width: 108%;
       height: 3px;
-      bottom: -1.5px;
+      bottom: -1px;
       left: -30px;
-      background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
+      background: linear-gradient(
+        270deg,
+        #9cc622 0.2%,
+        rgba(156, 198, 34, 0.2) 100%
+      );
     }
   }
 
@@ -93,7 +127,11 @@
       height: 3px;
       bottom: 284.5px;
       left: -30px;
-      background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
+      background: linear-gradient(
+        270deg,
+        #9cc622 0.2%,
+        rgba(156, 198, 34, 0.2) 100%
+      );
     }
   }
 }
