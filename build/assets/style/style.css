@@ -1665,7 +1665,7 @@ button.btn-order {
 .call-to-judge-wrapper {
   max-width: 923px;
   width: 100%;
-  margin: auto;
+  margin: 0 275px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1749,7 +1749,7 @@ button.btn-order {
 .container .annual-maintenance-wrapper {
   max-width: 850px;
   width: 100%;
-  margin: 0 0 0 207px;
+  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 47px;
 }
