@@ -1787,7 +1787,7 @@ button.btn-order {
 .wrapper-grid {
   min-height: 100%;
   display: grid;
-  grid: minmax(auto, 80px) repeat(4, 103px)/minmax(auto, 410px) 60px minmax(auto, 410px);
+  grid: minmax(auto, 80px) repeat(4, 103px)/minmax(auto, 395px) 60px minmax(auto, 395px);
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -1839,7 +1839,7 @@ button.btn-order {
   width: 3px;
   height: 494px;
   bottom: -310px;
-  left: 878px;
+  left: 847px;
   background: -webkit-gradient(linear, left top, right top, color-stop(20%, #9cc622), to(#9cc622));
   background: -o-linear-gradient(left, #9cc622 20%, #9cc622 100%);
   background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
@@ -1983,6 +1983,70 @@ button.btn-order {
   line-height: 23px;
   color: #8cb31a;
   padding: 17px 25.5px 15px 71px;
+}
+
+.price {
+  margin-bottom: 88px;
+}
+
+.price-grid {
+  min-height: 100%;
+  display: grid;
+  grid-template: repeat(5, 55px minmax(55px, 76px))/repeat(1, 340px 170px 170px 170px);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-item {
+  margin: auto 16px;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.row-title {
+  display: grid;
+  grid-template: repeat(1, 55px minmax(55px, 76px))/repeat(1, 340px 170px 170px 170px);
+  grid-column: 1/5;
+  background: #9dc622;
+}
+
+.div {
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-right: 1px solid #dedede;
+}
+
+.row-text {
+  display: grid;
+  grid-template: repeat(1, minmax(55px, 76px))/repeat(1, 340px 170px 170px 170px);
+  grid-column: 1/5;
+}
+.row-text:nth-of-type(even) {
+  background: #f0f0f0;
+  border: 1px solid #dedede;
+}
+.row-text:nth-of-type(odd) {
+  background: #e5e5e5;
+  border: 1px solid #dedede;
+}
+
+.price-item.text {
+  font-family: Open Sans;
+  color: #202020;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  border-right: 1px solid #dedede;
+}
+.price-item.text:last-child {
+  border-right: none;
 }
 
 /* Modal */

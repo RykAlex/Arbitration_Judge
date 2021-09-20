@@ -4,9 +4,9 @@
 .wrapper-grid {
   min-height: 100%;
   display: grid;
-  grid: minmax(auto, 80px) repeat(4, 103px) / minmax(auto, 410px) 60px minmax(
+  grid: minmax(auto, 80px) repeat(4, 103px) / minmax(auto, 395px) 60px minmax(
       auto,
-      410px
+      395px
     );
   align-content: center;
   justify-content: center;
@@ -55,7 +55,7 @@
       width: 3px;
       height: 494px;
       bottom: -310px;
-      left: 878px;
+      left: 847px;
       background: linear-gradient(to right, #9cc622 20%, #9cc622 100%);
     }
   }
