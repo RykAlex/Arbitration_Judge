@@ -1,37 +1,38 @@
-.container .header-content {
-  width: 1260px;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-.header-content {
+.container .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 890px;
+  margin: 0 auto;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.header-logo {
-  margin-right: 70px;
+.footer-logo {
+  margin-right: 58px;
 }
-.header-phone {
+.footer-phone {
   display: flex;
   align-items: baseline;
-  margin-right: 65px;
 }
-.phone-icon {
+.phone-icon-f {
   margin-right: 12px;
   img {
     width: 10px;
     height: 17px;
   }
 }
-.content {
+.content-f {
   color: $dark;
   font-size: 22px;
   line-height: 27px;
 }
-.header-nav {
+.footer-nav {
   display: flex;
 }
-.nav-link {
+.nav-link-f {
   margin-right: 45px;
   color: $dark;
   font-family: Montserrat;
@@ -51,7 +52,7 @@
     content: "";
     width: 0;
     height: 2px;
-    background-color: $green;
+    background-color: $dark;
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -59,21 +60,64 @@
     transition: width 0.2s linear;
   }
 }
-.nav-link .active {
+.nav-link-f .active {
   width: 100%;
   border: 2px;
-  background-color: $green;
+  background-color: $dark;
   position: absolute;
   bottom: -5px;
   left: 0;
   z-index: 1;
+}
+.policy {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+.policy-text {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-family: Open Sans;
+
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  white-space: nowrap;
+
+  text-decoration-line: underline;
+
+  color: #202020;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+button.btn-fomalize.footer {
+  margin-top: 12px;
+  margin: 12px auto 32px auto;
+}
+.social {
+  margin-bottom: 30px;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.item-icon {
+  margin-right: 38px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .menu {
   display: none;
 }
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
-  .container-header {
+  .container-footer {
     padding: 0 16px;
   }
   .menu {
@@ -85,7 +129,7 @@
 
     margin-top: -17px;
   }
-  .container-header {
+  .container-footer {
     margin-top: 32px;
     margin-left: 20px;
   }

@@ -1,0 +1,92 @@
+.download-brochure {
+  background-color: #f0f0f0;
+  max-height: 520px;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.label {
+  max-width: 533px;
+  width: 100%;
+  height: 80px;
+}
+.brochure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+}
+.brochure-items {
+  margin-left: -165px;
+}
+form {
+  margin-top: 80px;
+  margin-bottom: 85px;
+}
+.picture {
+  overflow: hidden;
+  object-fit: contain;
+}
+.label-title {
+  font-family: Montserrat;
+  color: #202020;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 43px;
+  & span {
+    font-family: Montserrat;
+    color: #9dc622;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 15px;
+  }
+}
+.input-all {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.input-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+input {
+  padding: 14px 0 14px 0;
+}
+.name-text {
+  margin-right: 31px;
+}
+input {
+  width: 100%;
+}
+
+.input-email {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 24px;
+}
+.email-text {
+  margin-right: 36px;
+}
+.input-subtitle {
+  margin-bottom: 32px;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+
+  color: #202020;
+}
+button.btn-download {
+  width: 37.22%;
+}
+@import "variables-breakpoints";
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
+}
