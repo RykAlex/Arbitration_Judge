@@ -39,6 +39,9 @@
   display: flex;
   align-items: center;
   margin-bottom: 48px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .no-limit .icon-times {
   margin-right: 35px;
@@ -66,7 +69,38 @@
 }
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
+  .call-to-judge-wrapper {
+    margin: 0 auto;
+  }
+  .call-to-judge {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+  .no-limit {
+    margin-bottom: 31px;
+  }
 }
-
 @media screen and (max-width: $mobile) {
+  .call-to-judge-wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .call-subtitle {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 8px;
+  }
+  .call-title {
+    font-size: 32px;
+    line-height: 104%;
+  }
+  .call-text {
+    font-size: 16px;
+    line-height: 156%;
+  }
+  .call-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }

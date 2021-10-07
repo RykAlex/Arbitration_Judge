@@ -1,23 +1,25 @@
 .card {
-  height: 768px;
-
-  background: url("/src/assets/static/img/bg.png") no-repeat;
-  background-size: 100% 100%;
-  position: relative;
+  background-image: url(/src/assets/static/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .container .card-content {
   max-width: 1116px;
   width: 100%;
   margin: 0 0 0 100px;
-  padding-top: 72px;
 }
 .card-content {
   display: flex;
+  justify-content: space-between;
 }
 .left {
   display: flex;
-  width: 39%;
+  width: 40%;
   flex-direction: column;
+  padding-top: 56px;
+  padding-bottom: 74px;
 }
 .left-title {
   display: flex;
@@ -28,7 +30,7 @@
   font-family: Montserrat;
   font-weight: bold;
   font-size: 72px;
-  line-height: 88px;
+  line-height: 122%;
   color: $green-text;
 }
 .card-subtitle {
@@ -37,7 +39,7 @@
   color: $white;
   font-weight: 600;
   font-size: 24px;
-  line-height: 25px;
+  line-height: 100%;
   letter-spacing: 2px;
 }
 .for-who {
@@ -45,11 +47,10 @@
   color: $white;
   font-weight: 500;
   font-size: 32px;
-  line-height: 33px;
+  line-height: 101%;
 }
 .card-img {
   margin-top: 56px;
-  overflow: hidden;
 
   img {
     display: block;
@@ -62,20 +63,104 @@
   color: $white;
   font-weight: 600;
   font-size: 17px;
-  line-height: 25px;
+  line-height: 147%;
   letter-spacing: 0.7px;
 }
 button.btn-order {
   width: 36%;
 }
-.right img {
-  position: absolute;
-  bottom: -56px;
-  right: 150px;
+.right {
+  width: 60%;
+}
+.wrapper-img {
+  position: relative;
+  padding-top: 114.54%;
+
+  & img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
 }
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
+  .card-img,
+  .btn-order,
+  .text-under-card {
+    display: none;
+  }
+  .card-content {
+    flex-direction: column;
+  }
+  .container .card-content {
+    margin: 0;
+  }
+  .left {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 15px;
+  }
+  .right {
+    width: 100%;
+  }
+  .left-title {
+    justify-content: center;
+  }
+  .for-who {
+    text-align: center;
+  }
+
+  .card-title {
+    margin-right: 17px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    color: $green-text;
+  }
+  .card-subtitle {
+    margin-top: 10px;
+    font-family: Montserrat;
+    color: $white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+  }
+  .for-who {
+    font-family: Montserrat;
+    color: $white;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+  }
+  .wrapper-img {
+    position: relative;
+    padding-top: 54.54%;
+
+    & img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 @media screen and (max-width: $mobile) {
+  .wrapper-img {
+    position: relative;
+    padding-top: 114.54%;
+
+    & img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
 }

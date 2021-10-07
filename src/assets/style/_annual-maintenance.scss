@@ -17,9 +17,17 @@
 .annual-maintenance-text {
   font-family: Montserrat;
   color: #fff;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 24px;
-  line-height: 35px;
+  line-height: 145%;
+  & span {
+    font-family: Montserrat;
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 145%;
+  }
 }
 .annual-maintenance-wrapper .btn-price {
   width: 303px;
@@ -28,7 +36,34 @@
 }
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
+  .annual-maintenance {
+    margin-bottom: 48px;
+  }
+  .annual-maintenance-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .annual-maintenance-text {
+    font-family: Montserrat;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 145%;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+  .annual-maintenance-wrapper .btn-price {
+    width: 256px;
+    height: 56px;
+    border-radius: 5px;
+  }
 }
 
 @media screen and (max-width: $mobile) {
+  .container .annual-maintenance-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
 }
