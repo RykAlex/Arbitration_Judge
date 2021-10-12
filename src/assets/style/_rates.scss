@@ -1,0 +1,35 @@
+.rates {
+  padding-top: 56px;
+  border-top: 2px solid #f0f0f0;
+  margin-bottom: 64px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.rates .container {
+  max-width: 1072px;
+  width: 100%;
+  margin: 0 auto;
+}
+.rates-title {
+  font-family: Montserrat;
+
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 103%;
+  margin-bottom: 64px;
+
+  color: #202020;
+}
+.rates-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+@import "variables-breakpoints";
+@media screen and (max-width: $tablet) {
+}
+
+@media screen and (max-width: $mobile) {
+}

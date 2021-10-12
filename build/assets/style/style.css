@@ -2905,11 +2905,13 @@ a.nav-link-m {
 .reviews {
   padding-top: 56px;
   border-top: 2px solid #f0f0f0;
-  margin-bottom: 88px;
+  margin-bottom: 64px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
 }
 
 .reviews .container {
-  max-width: 1170px;
+  max-width: 1072px;
   width: 100%;
   margin: 0 auto;
 }
@@ -2927,9 +2929,9 @@ a.nav-link-m {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2939,17 +2941,20 @@ a.nav-link-m {
 .reviews-photo {
   margin-right: 48px;
   max-width: 414px;
-  max-height: 233px;
-  height: 100%;
   width: 100%;
+  height: auto;
 }
+
 .reviews-photo img {
   display: block;
 }
 
-.name-content {
-  max-width: 609px;
+.reviews-content {
+  max-width: 610px;
   width: 100%;
+}
+
+.name-content {
   margin-bottom: 10px;
   font-family: Montserrat;
   white-space: nowrap;
@@ -2988,6 +2993,7 @@ a.nav-link-m {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 42px;
   }
 
   .reviews-photo {
@@ -3002,5 +3008,40 @@ a.nav-link-m {
   .reviews-title {
     margin-bottom: 32px;
   }
+}
+.rates {
+  padding-top: 56px;
+  border-top: 2px solid #f0f0f0;
+  margin-bottom: 64px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.rates .container {
+  max-width: 1072px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rates-title {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 103%;
+  margin-bottom: 64px;
+  color: #202020;
+}
+
+.rates-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 64px;
 }
 /*# sourceMappingURL=style.css.map */
