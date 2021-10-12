@@ -16,7 +16,6 @@
   font-weight: 500;
   font-size: 64px;
   line-height: 103%;
-  margin-bottom: 64px;
 
   color: #202020;
 }
@@ -24,11 +23,171 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-bottom: 2px solid #f0f0f0;
+  &:last-child {
+    border: none;
+  }
+}
+.rates-card {
+  margin-right: 47px;
+  img {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+.card-text {
+  max-width: 610px;
+  width: 100%;
+  margin-bottom: 31px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 156%;
+
+  color: #202020;
 }
 
+.price-content {
+  display: flex;
+  align-items: center;
+}
+.card-name {
+  font-family: Open Sans;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 153%;
+
+  color: #a0a0a0;
+}
+.card-status {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 103%;
+  text-transform: uppercase;
+
+  color: #202020;
+  margin-bottom: 14px;
+}
+.consul-times,
+.number-of-calls-times {
+  font-family: Montserrat;
+
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 103%;
+  margin-bottom: 4px;
+  color: #8cb31a;
+}
+.consultation {
+  margin-right: 40px;
+}
+.number-of-calls {
+  margin-right: 48px;
+}
+.consul-text,
+.number-of-calls-text {
+  font-family: Open Sans;
+
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 153%;
+
+  color: #a0a0a0;
+}
+.price-all {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: baseline;
+  justify-content: center;
+}
+.price-year {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 104%;
+  margin-right: 8px;
+
+  color: #8cb31a;
+}
+.price-year-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 153%;
+
+  color: #a0a0a0;
+}
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
+  .rates {
+    padding-top: 40px;
+  }
+
+  .price-content {
+    flex-wrap: wrap;
+  }
+  .consul-times,
+  .number-of-calls-times {
+    font-size: 24px;
+
+    margin-bottom: 5px;
+  }
+  .consultation {
+    margin-right: 40px;
+    margin-bottom: 16px;
+  }
+  .rates-title {
+    font-family: Montserrat;
+
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 103%;
+
+    color: #202020;
+  }
+
+  .number-of-calls {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .price-all {
+    justify-content: flex-start;
+  }
+  .rates-card {
+    margin-right: 0;
+    img {
+      display: flex;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+  .rates-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 46px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .card-status {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .card-text {
+    font-style: normal;
+  }
 }
 
 @media screen and (max-width: $mobile) {

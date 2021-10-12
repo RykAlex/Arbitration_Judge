@@ -1,0 +1,120 @@
+.about {
+  padding-top: 56px;
+  border-top: 2px solid #f0f0f0;
+  margin-bottom: 64px;
+  padding-bottom: 88px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.about .container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
+.about-title {
+  font-family: Montserrat;
+
+  font-weight: 500;
+  font-size: 64px;
+  margin-bottom: 64px;
+  line-height: 103%;
+
+  color: #202020;
+}
+.about-items {
+  display: flex;
+  max-width: 980px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border-bottom: 2px solid #f0f0f0;
+}
+.about-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 64px;
+}
+.about-card {
+  margin-bottom: 16px;
+}
+.about-content {
+  text-align: center;
+}
+.about-name {
+  margin-bottom: 8px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 121%;
+  text-align: center;
+
+  color: #202020;
+}
+.about-prof {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 156%;
+  text-align: center;
+
+  color: #9cc622;
+}
+.about-text {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 168%;
+
+  color: #202020;
+}
+.text-right {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 48px;
+}
+.text-left {
+  max-width: 500px;
+  width: 100%;
+}
+@import "variables-breakpoints";
+@media screen and (max-width: $tablet) {
+  .about-items {
+    flex-direction: column;
+  }
+  .about-text {
+    display: none;
+  }
+  .about-items {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .about {
+    padding-bottom: 0;
+  }
+  .about-title {
+    font-family: Montserrat;
+
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 40px;
+    line-height: 103%;
+
+    color: #202020;
+  }
+  .about-all {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+}
