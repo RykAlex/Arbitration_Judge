@@ -26,15 +26,15 @@
   max-width: 1000px;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 0 64px auto;
+  margin: 0 auto 64px auto;
   border-bottom: 2px solid #f0f0f0;
 }
 .about-container-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 312px;
-  margin: 0 0 64px 0;
+  width: 33.333%;
+  margin: 0 auto 64px auto;
 }
 .about-item {
   display: flex;
