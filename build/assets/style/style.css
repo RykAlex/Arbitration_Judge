@@ -3296,9 +3296,7 @@ a.nav-link-m {
 }
 
 .about-items {
-  min-height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin: 0 auto 64px auto;
@@ -3306,10 +3304,18 @@ a.nav-link-m {
 }
 
 .about-item {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
+  margin-bottom: 64px;
 }
 
 .about-img img {
@@ -3318,9 +3324,11 @@ a.nav-link-m {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 16px;
 }
 
 .about-name {
+  margin-bottom: 8px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
