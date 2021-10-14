@@ -21,36 +21,61 @@
   color: #202020;
 }
 .about-items {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  display: flex;
 
+  max-width: 1000px;
+
+  flex-wrap: wrap;
   margin: 0 auto 64px auto;
   border-bottom: 2px solid #f0f0f0;
 }
-
+.about-container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.333%;
+  margin: 0 0 64px 0;
+}
 .about-item {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template: 208px 1fr 1fr / 208px;
+  display: flex;
+
+  min-width: 208px;
+  margin: 0 auto;
+  flex-direction: column;
 }
-.about-img {
+.about-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-bottom: 64px;
+}
+.pic-container {
+  padding-bottom: 100%;
   position: relative;
-  padding: 0 0 100% 0;
+  height: 0;
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
 }
-.about-img img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  object-fit: cover;
-  border-radius: 50%;
+
+.about-content {
+  text-align: center;
+  margin-top: 16px;
 }
 .about-name {
-  margin-top: 16px;
   margin-bottom: 8px;
   font-family: Montserrat;
   font-style: normal;
@@ -59,7 +84,6 @@
   line-height: 121%;
   text-align: center;
   white-space: nowrap;
-  justify-self: center;
 
   color: #202020;
 }
@@ -70,8 +94,7 @@
   font-size: 16px;
   line-height: 156%;
   text-align: center;
-  justify-self: center;
-  white-space: nowrap;
+
   color: #9cc622;
 }
 .about-text {
@@ -98,8 +121,7 @@
 @import "variables-breakpoints";
 @media screen and (max-width: $tablet) {
   .about-items {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
   .about-text {
     display: none;
